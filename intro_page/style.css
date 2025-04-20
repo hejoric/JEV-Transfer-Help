@@ -41,9 +41,8 @@ nav a {
 }
 
 .university-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
 
 select, button {
@@ -73,8 +72,9 @@ footer {
 }
 
 #open-dialog {
-  align-items: right;
-  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #17a884;
   color: white;
   border: none;
@@ -85,9 +85,6 @@ footer {
 
 #open-dialog:hover {
   background-color: #23977a;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
 }
 
 dialog {
