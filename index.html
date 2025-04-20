@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA Transfer Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>NOVA Transfer Helper</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#universities">Universities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Plan Your Transfer from NOVA</h2>
+      <p>Find the right university and meet transfer requirements with ease.</p>
+    </section>
+
+    <section id="universities" class="university-section">
+      <h3>Explore Transfer Guides</h3>
+      <select id="university-dropdown">
+        <option value="">-- Select a University --</option>
+        <option value="universities/mason.html">George Mason University</option>
+        <option value="universities/vcu.html">Virginia Commonwealth University</option>
+        <option value="universities/uva.html">University of Virginia</option>
+      </select>
+      <button onclick="goToGuide()">View Guide</button>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Need help? Contact NOVA's Transfer Office.</p>
+    <p>&copy; 2025 NOVA Transfer Helper</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
