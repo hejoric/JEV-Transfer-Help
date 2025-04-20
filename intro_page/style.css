@@ -58,3 +58,15 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+.security-tips {
+  /* ... other styles ... */
+  display: none !important; /* Force hidden by default */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.security-tips.show {
+  display: block !important;
+  opacity: 1;
+}
