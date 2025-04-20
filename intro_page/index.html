@@ -37,6 +37,40 @@
     </section>
   </main>
 
+  <div class="button-center">
+    <button id="open-dialog">Security Tips</button>
+  </div>
+  
+
+  <dialog id="security-tips">
+    <h4>Good Security Practices</h4>
+    <ul>
+      <li>Use strong unique passwords</li>
+      <li>Enable two-factor authentication</li>
+      <li>Consider creating a restore point</li>
+      <li>Be cautious of suspicious emails or links</li>
+      <li>Use Anti-Virus Software</li>
+      <li>Avoid using public Wi-Fi for sensitive matters</li>
+      <li>Use a Password Manager</li>
+    </ul>
+    <button id="close-dialog">Close</button>
+  </dialog>
+  
+
+  <script>
+    const openBtn = document.getElementById('open-dialog');
+    const closeBtn = document.getElementById('close-dialog');
+    const dialog = document.getElementById('security-tips');
+  
+    openBtn.addEventListener('click', () => {
+      dialog.showModal();
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      dialog.close();
+    });
+  </script>
+
   <footer id="contact">
     <p>Need help? Contact NOVA's Transfer Office.</p>
     <p>&copy; 2025 NOVA Transfer Helper</p>
