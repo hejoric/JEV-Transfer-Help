@@ -82,6 +82,7 @@ footer {
 }
 
 #open-dialog:hover {
+  text-align: center;
   background-color: #23977a;
 }
 
