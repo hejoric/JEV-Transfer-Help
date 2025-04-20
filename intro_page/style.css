@@ -72,11 +72,13 @@ footer {
 }
 
 #open-dialog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px 15px;
   background-color: #17a884;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
 #open-dialog:hover {
@@ -88,4 +90,9 @@ dialog {
   border: none;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.section-wrapper {
+  text-align: center;
+  margin-top: 2rem;
 }
