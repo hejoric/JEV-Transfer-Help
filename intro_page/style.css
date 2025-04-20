@@ -73,6 +73,7 @@ footer {
 }
 
 #open-dialog {
+  align-items: right;
   padding: 10px 15px;
   background-color: #17a884;
   color: white;
