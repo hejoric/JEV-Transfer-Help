@@ -77,10 +77,6 @@ footer {
   align-items: center;
   background-color: #17a884;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 1rem;
 }
 
 #open-dialog:hover {
