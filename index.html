@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <h1>Welcome to JEV's Transfer Helper Website! </h1>
+      <h1>NOVA Transfer Helper</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#universities">Universities</a></li>
@@ -20,9 +20,8 @@
 
   <main>
     <section class="hero">
-      <img src="Northern_Virginia_Community_College_logo.png" alt="Example Image" width="300" height="auto">
-      <h2> Welcome to NOVA Transfer Helper</h2>
-      <p>Find the right university and meet their transfer requirements with ease.</p>
+      <h2> Welcome to the NOVA Transfer Helper</h2>
+      <p>Find the right university and meet transfer requirements with ease.</p>
     </section>
 
     <section id="universities" class="university-section">
@@ -36,23 +35,21 @@
       <button onclick="goToGuide()">View Guide</button>
     </section>
   </main>
-
-  <button class="security-btn" onclick="toggleTips()">Security Tips</button>
-
-  <div id="securityTips" class="security-tips">
-    <span class="close-btn" onclick="toggleTips()">×</span>
-    <h3>Security Best Practices</h3>
-    <ul>
-       <li>Use strong, unique passwords for each account</li>
-       <li>Enable two-factor authentication (2FA)</li>
-       <li>Keep software and systems updated</li>
-       <li>Be cautious of suspicious emails/links</li>
-       <li>Use a password manager</li>
-       <li>Regularly back up important data</li>
-       <li>Use antivirus software</li>
-       <li>Avoid public Wi-Fi for sensitive transactions</li>
-    </ul>
-  </div>
+  
+  <script>
+      function toggleTips() {
+          const tips = document.getElementById('securityTips');
+          tips.classList.toggle('show');
+      }
+  
+      // Close when clicking outside the tips box
+      window.onclick = function(event) {
+          const tips = document.getElementById('securityTips');
+          if (event.target === tips) {
+              tips.classList.remove('show');
+          }
+      }
+  </script>
 
   <footer id="contact">
     <p>Need help? Contact NOVA's Transfer Office.</p>
