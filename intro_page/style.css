@@ -73,9 +73,6 @@ footer {
 }
 
 #open-dialog {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
   padding: 10px 15px;
   background-color: #17a884;
   color: white;
@@ -87,6 +84,9 @@ footer {
 
 #open-dialog:hover {
   background-color: #23977a;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
 }
 
 dialog {
