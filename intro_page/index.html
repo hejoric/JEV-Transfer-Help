@@ -36,20 +36,36 @@
       <button onclick="goToGuide()">View Guide</button>
     </section>
   </main>
+  
+  <button id="open-dialog">Show Security Tips</button>
 
-  <div id="securityTips" class="security-tips">
-  <span class="close-btn" onclick="toggleTips()">×</span>
-  <h4>Security Best Practices</h4>
-  <ul>
-    <li>Use strong unique passwords</li>
-    <li>Enable two-factor authentication</li>
-    <li>Consider creating a restore point</li>
-    <li>Be cautious of suspicious emails or links</li>
-    <li>Use Anti-Virus Software</li>
-    <li>Avoid using public Wi-Fi for sensitive matters</li>
-    <li>Use a Password Manager</li>
-  </ul>
-</div>
+  <dialog id="security-tips">
+    <h4>Security Best Practices</h4>
+    <ul>
+      <li>Use strong unique passwords</li>
+      <li>Enable two-factor authentication</li>
+      <li>Consider creating a restore point</li>
+      <li>Be cautious of suspicious emails or links</li>
+      <li>Use Anti-Virus Software</li>
+      <li>Avoid using public Wi-Fi for sensitive matters</li>
+      <li>Use a Password Manager</li>
+    </ul>
+    <button id="close-dialog">Close</button>
+  </dialog>
+  
+  <script>
+    const dialog = document.getElementById("security-tips");
+    const openBtn = document.getElementById("open-dialog");
+    const closeBtn = document.getElementById("close-dialog");
+  
+    openBtn.addEventListener("click", () => {
+      dialog.showModal();
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      dialog.close();
+    });
+  </script>
 
   <footer id="contact">
     <p>Need help? Contact NOVA's Transfer Office.</p>
