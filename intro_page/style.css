@@ -58,3 +58,21 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+#open-dialog {
+  padding: 10px 15px;
+  background-color: #17a884;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#open-dialog:hover {
+  background-color: #23977a;
+}
+
+.button-center {
+  text-align: center;
+  margin-top: 1.5rem;
+}
