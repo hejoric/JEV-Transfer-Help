@@ -36,8 +36,10 @@
       <button onclick="goToGuide()">View Guide</button>
     </section>
   </main>
+  <div class="button-center">
+    <button id="open-dialog">Security Tips</button>
+  </div>
   
-  <button id="open-dialog">Security Tips</button>
 
   <dialog id="security-tips">
     <h4>Good Security Practices</h4>
@@ -53,16 +55,17 @@
     <button id="close-dialog">Close</button>
   </dialog>
   
+
   <script>
-    const dialog = document.getElementById("security-tips");
-    const openBtn = document.getElementById("open-dialog");
-    const closeBtn = document.getElementById("close-dialog");
+    const openBtn = document.getElementById('open-dialog');
+    const closeBtn = document.getElementById('close-dialog');
+    const dialog = document.getElementById('security-tips');
   
-    openBtn.addEventListener("click", () => {
+    openBtn.addEventListener('click', () => {
       dialog.showModal();
     });
   
-    closeBtn.addEventListener("click", () => {
+    closeBtn.addEventListener('click', () => {
       dialog.close();
     });
   </script>

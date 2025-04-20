@@ -78,7 +78,6 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 1rem;
 }
 
 #open-dialog:hover {
@@ -92,7 +91,7 @@ dialog {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.section-wrapper {
+.button-center {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
