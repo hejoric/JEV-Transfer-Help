@@ -59,6 +59,17 @@ footer {
   margin-top: 2rem;
 }
 
+input[type="file"] {
+  margin-top: 1rem;
+}
+
+#parsed-output {
+  background-color: #e0f2f1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
 #open-dialog {
   padding: 10px 15px;
   background-color: #17a884;

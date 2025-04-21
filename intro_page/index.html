@@ -35,6 +35,24 @@
       </select>
       <button onclick="goToGuide()">View Guide</button>
     </section>
+    <section class="university-section">
+      <h3>Upload Transcript (PDF)</h3>
+      <input type="file" id="transcript-upload" accept=".pdf" />
+      <div id="parsed-output" style="margin-top: 1rem; display: none;">
+        <h4>Extracted Courses:</h4>
+        <ul id="courses-completed">
+          <li>ENG 111</li>
+          <li>MTH 161</li>
+          <li>CSC 200</li>
+        </ul>
+    
+        <h4>Recommended Plan:</h4>
+        <p><strong>Fall:</strong> MTH 264, CSC 201, SDV 100</p>
+        <p><strong>Spring:</strong> CSC 202, CST 130, PHI 220</p>
+      </div>
+    </section>
+    
+
   </main>
 
   <div class="button-center">
