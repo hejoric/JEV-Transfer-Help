@@ -96,3 +96,20 @@ input[type="file"] {
   text-align: center;
   margin-top: 1.5rem;
 }
+
+.university-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between logos */
+  margin-bottom: 1rem;
+}
+
+.university-logos img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.university-logos img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
