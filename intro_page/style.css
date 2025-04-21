@@ -1,3 +1,9 @@
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -51,12 +57,16 @@ select, button {
   font-size: 1rem;
 }
 
+main {
+  flex: 1; /* Push the footer to the bottom by taking up remaining space */
+}
+
 footer {
   text-align: center;
   background: #004d40;
   color: white;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 0; /* Remove any margin that might push it up */
 }
 
 input[type="file"] {
@@ -68,7 +78,6 @@ input[type="file"] {
   padding: 1rem;
   border-radius: 8px;
 }
-
 
 #open-dialog {
   padding: 10px 15px;
